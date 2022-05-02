@@ -47,6 +47,14 @@ func _on_Timer_timeout():
 		pro()
 	else:
 		$Timer.stop()
+		var m = []
+		for i in range(min(len(sim.pts), len(cur))):
+			drivers.d[cur[i][0]]["points"]+=sim.pts[i]
+		for i in cur:
+			m.append([drivers.d[i[0]]["name"], 0])
+		sim.res=m
+		sim.rnd+=1
+			
  
 
 func _on_Button_pressed():
