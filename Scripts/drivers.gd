@@ -229,8 +229,8 @@ func crank():
 func exportdat():
 	
 	var obj = {
-		"drivers": JSON.print(d),
-		"const": JSON.print(t),
+		"drivers": d,
+		"const": t,
 		"wdc":wdc,
 		"wcc":wcc,
 		"other": {
@@ -247,8 +247,8 @@ func importdat():
 	if o == null:
 		return null
 	
-	d = JSON.parse(o["drivers"]).get_result()
-	t = JSON.parse(o["const"]).get_result()
+	d = o["drivers"]
+	t = o["const"]
 	wdc = o["wdc"]
 	wcc = o["wcc"]
 	var ot = o["other"]
