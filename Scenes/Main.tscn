@@ -183,10 +183,10 @@ margin_bottom = 68.0
 text = "Season 1"
 
 [node name="Label4" type="Label" parent="."]
-margin_left = 346.0
-margin_top = 560.0
-margin_right = 412.0
-margin_bottom = 581.0
+margin_left = 430.0
+margin_top = 414.0
+margin_right = 496.0
+margin_bottom = 435.0
 
 [node name="Label2" type="Label" parent="."]
 margin_left = 576.0

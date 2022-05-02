@@ -8,7 +8,9 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$tracks.add_item("Spa-Francorchamps", 0)
+	$tracks.add_item("Red Bull Ring", 1)
+	$tracks.add_item("Autodromo Nazionale Monza", 2)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -21,4 +23,6 @@ func _on_quick_pressed():
 
 
 func _on_full_pressed():
-	pass # Replace with function body.
+	sim.track = $tracks.selected
+	sim.laps = int($LineEdit.text)
+	get_tree().change_scene("res://Scenes/Race.tscn")

@@ -25,38 +25,12 @@ margin_right = 664.0
 margin_bottom = 458.0
 color = Color( 0.0941176, 0.298039, 0.611765, 1 )
 
-[node name="Label2" type="Label" parent="ColorRect2"]
-margin_left = 59.0
-margin_top = 11.0
-margin_right = 261.0
-margin_bottom = 25.0
-text = "Full Simulate does not exist yet"
-
 [node name="Label" type="Label" parent="ColorRect2"]
 margin_left = 49.0
 margin_top = 43.0
 margin_right = 154.0
 margin_bottom = 57.0
 text = "Number of Laps:"
-
-[node name="TextEdit" type="TextEdit" parent="ColorRect2"]
-margin_left = 208.0
-margin_top = 31.0
-margin_right = 274.0
-margin_bottom = 71.0
-
-[node name="Label3" type="Label" parent="ColorRect2"]
-margin_left = 48.0
-margin_top = 91.0
-margin_right = 157.0
-margin_bottom = 105.0
-text = "Track Length (m):"
-
-[node name="TextEdit2" type="TextEdit" parent="ColorRect2"]
-margin_left = 208.0
-margin_top = 78.0
-margin_right = 274.0
-margin_bottom = 118.0
 
 [node name="quick" type="Button" parent="ColorRect2"]
 margin_left = 25.0
@@ -71,6 +45,20 @@ margin_top = 231.0
 margin_right = 303.0
 margin_bottom = 309.0
 text = "Full Simulation"
+
+[node name="tracks" type="OptionButton" parent="."]
+margin_left = 381.0
+margin_top = 209.0
+margin_right = 612.0
+margin_bottom = 236.0
+text = "Select the track"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 548.0
+margin_top = 160.0
+margin_right = 606.0
+margin_bottom = 184.0
+align = 1
 
 [connection signal="pressed" from="ColorRect2/quick" to="." method="_on_quick_pressed"]
 [connection signal="pressed" from="ColorRect2/full" to="." method="_on_full_pressed"]

@@ -83,6 +83,8 @@ func _on_Button4_pressed():
 
 
 func _on_Button6_pressed():
+	if sim.rnd == 1:
+		return
 	drivers.wdc.append(rank[0][2])
 	drivers.wcc.append(cons[0][2])
 	sim.ssn +=1

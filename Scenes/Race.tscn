@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://race.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1031.0
+margin_bottom = 607.0
+color = Color( 0, 0.286275, 0.458824, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 61.0
+margin_top = 34.0
+margin_right = 246.0
+margin_bottom = 52.0
+text = "Lap 0/0"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 745.0
+margin_top = 113.0
+margin_right = 990.0
+margin_bottom = 185.0
+rect_pivot_offset = Vector2( 91, 47 )
+text = "Start Race"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 745.0
+margin_top = 211.0
+margin_right = 990.0
+margin_bottom = 283.0
+rect_pivot_offset = Vector2( 91, 47 )
+text = "Pause Race"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+margin_left = 55.0
+margin_top = 75.0
+margin_right = 426.0
+margin_bottom = 571.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+margin_right = 24.0
+margin_bottom = 20.0
+
+[node name="Ranks" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+margin_bottom = 20.0
+
+[node name="Names" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 20.0
+
+[node name="Button" type="Button" parent="ScrollContainer/HBoxContainer"]
+margin_left = 8.0
+margin_right = 20.0
+margin_bottom = 20.0
+flat = true
+
+[node name="Timing" type="VBoxContainer" parent="ScrollContainer/HBoxContainer"]
+margin_left = 24.0
+margin_right = 24.0
+margin_bottom = 20.0
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 750.0
+margin_top = 305.0
+margin_right = 996.0
+margin_bottom = 377.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
