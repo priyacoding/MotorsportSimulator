@@ -47,4 +47,4 @@ func quick():
 		f.append(i)
 		
 	res = f
-	get_tree().change_scene("res://Main.tscn")
+	get_tree().change_scene("res://Scenes/Main.tscn")

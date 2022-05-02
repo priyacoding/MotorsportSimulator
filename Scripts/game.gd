@@ -88,7 +88,7 @@ func _on_Button6_pressed():
 	sim.ssn +=1
 	sim.rnd = 1
 	drivers.resets()
-	get_tree().change_scene("res://Main.tscn")
+	get_tree().change_scene("res://Scenes/Main.tscn")
 	print(drivers.wdc, drivers.wcc)
 
 
@@ -97,8 +97,8 @@ func _on_Button2_pressed():
 
 
 func _on_Button5_pressed():
-	get_tree().change_scene("res://mainmenu.tscn")
+	get_tree().change_scene("res://Scenes/mainmenu.tscn")
 
 
 func _on_Button3_pressed():
-	get_tree().change_scene("res://halloffame.tscn")
+	get_tree().change_scene("res://Scenes/halloffame.tscn")

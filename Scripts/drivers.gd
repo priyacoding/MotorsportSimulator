@@ -255,7 +255,7 @@ func importdat():
 	sim.res = ot["res"]
 	sim.ssn = ot["ssn"]
 	sim.rnd = ot["rnd"]
-	get_tree().change_scene("res://Main.tscn")
+	get_tree().change_scene("res://Scenes/Main.tscn")
 	return true
 	
 func import(i):
@@ -268,7 +268,7 @@ func import(i):
 	sim.res = ot["res"]
 	sim.ssn = ot["ssn"]
 	sim.rnd = ot["rnd"]
-	get_tree().change_scene("res://Main.tscn")
+	get_tree().change_scene("res://Scenes/Main.tscn")
 	return true
 
 func resets():
@@ -439,6 +439,8 @@ func reset():
 	"rel": 60
 }]
 	sim.res = []
+	wdc = []
+	wcc = []
 	sim.ssn = 1
 	sim.rnd = 1
-	get_tree().change_scene("res://Main.tscn")
+	get_tree().change_scene("res://Scenes/Main.tscn")

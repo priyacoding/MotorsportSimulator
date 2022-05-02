@@ -11,13 +11,13 @@ config_version=4
 [application]
 
 config/name="MotorsportSimulator"
-run/main_scene="res://mainmenu.tscn"
+run/main_scene="res://Scenes/mainmenu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-drivers="*res://drivers.gd"
-sim="*res://sim.gd"
+drivers="*res://Scripts/drivers.gd"
+sim="*res://Scripts/sim.gd"
 
 [physics]
 
