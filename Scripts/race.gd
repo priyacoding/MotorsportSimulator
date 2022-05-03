@@ -1,8 +1,7 @@
 extends Control
 
-
-
 var cur = []
+var dnf =[]
 var lap = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -38,20 +37,43 @@ func pro():
 		else:
 			timing.text = str(i[1]-prevtiming)
 			$ScrollContainer/HBoxContainer/Timing.add_child(timing)
+	
+	for i in dnf:
+		var d = drivers.d[i]
+		var name =Label.new()
+		name.text = d["name"]
+		$ScrollContainer/HBoxContainer/Names.add_child(name)	
+		var timing = Label.new()
+		timing.text="DNF"
+		$ScrollContainer/HBoxContainer/Timing.add_child(timing)
 			
 func _on_Timer_timeout():
 	if lap < sim.laps:
-		cur=sim.lap(cur)
+		cur=sim.lap(cur, dnf)
+		for i in cur[1]:
+			dnf.append(i)
+		cur=cur[0]
 		cur.invert()
 		lap+=1
 		pro()
+		print(sim.fl)
 	else:
 		$Timer.stop()
 		var m = []
+		print(sim.fl)
 		for i in range(min(len(sim.pts), len(cur))):
 			drivers.d[cur[i][0]]["points"]+=sim.pts[i]
-		for i in cur:
-			m.append([drivers.d[i[0]]["name"], 0])
+			if cur[i][0] == sim.fl[1]:
+				drivers.d[cur[i][0]]["points"]+=sim.flpoint[1]
+		for i in cur:			
+			if i[0] == sim.fl[1]:
+				m.append([drivers.d[i[0]]["name"], 0, 0, 0])
+			else:
+				m.append([drivers.d[i[0]]["name"], 0])
+		for i in dnf:
+			m.append([drivers.d[i]["name"], "DNF"])
+		
+		
 		sim.res=m
 		sim.rnd+=1
 			

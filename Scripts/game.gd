@@ -5,8 +5,6 @@ var rank = drivers.rank()
 var cons = drivers.crank()
 
 func _ready():
-	# print(JSON.parse(drivers.exportdat()).get_result()["other"])
-	randomize()
 	$Label2.text="Round "+str(sim.rnd)
 	$Label.text="Season "+str(sim.ssn)
 	for i in range(len(rank)):
@@ -52,7 +50,10 @@ func _ready():
 				$a/prevres/Names.add_child(label2)
 				var label3 = Label.new()
 				if i<10:
-					label3.text = "+" + str(sim.pts[i])
+					if len(result[i]) ==4 and sim.flpoint[0]:
+						label3.text = "+" + str(sim.pts[i]+sim.flpoint[1]) + " (FL)"
+					else:
+						label3.text = "+" + str(sim.pts[i])
 				else:
 					label3.text = "0"
 				$a/prevres/Points.add_child(label3)

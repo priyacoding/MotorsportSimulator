@@ -112,17 +112,17 @@ margin_right = 24.0
 margin_bottom = 20.0
 
 [node name="Button" type="Button" parent="."]
-margin_left = 53.0
+margin_left = 51.0
 margin_top = 47.0
-margin_right = 324.0
+margin_right = 322.0
 margin_bottom = 102.0
 rect_pivot_offset = Vector2( 206, 34 )
 text = "Simulate Race"
 
 [node name="Button2" type="Button" parent="."]
-margin_left = 49.0
+margin_left = 51.0
 margin_top = 123.0
-margin_right = 320.0
+margin_right = 322.0
 margin_bottom = 178.0
 rect_pivot_offset = Vector2( 206, 34 )
 text = "Bulk Simulate"
@@ -152,18 +152,18 @@ rect_pivot_offset = Vector2( 206, 34 )
 text = "Reset All Stats and Results"
 
 [node name="Button7" type="Button" parent="."]
-margin_left = 54.0
-margin_top = 444.0
-margin_right = 325.0
-margin_bottom = 499.0
+margin_left = 53.0
+margin_top = 450.0
+margin_right = 324.0
+margin_bottom = 505.0
 rect_pivot_offset = Vector2( 195, 128 )
 text = "Export Data to Clipboard"
 
 [node name="Button8" type="Button" parent="."]
-margin_left = 360.0
-margin_top = 445.0
-margin_right = 631.0
-margin_bottom = 500.0
+margin_left = 369.0
+margin_top = 451.0
+margin_right = 640.0
+margin_bottom = 506.0
 rect_pivot_offset = Vector2( 195, 128 )
 text = "Import Data from Clipboard"
 
@@ -183,10 +183,10 @@ margin_bottom = 68.0
 text = "Season 1"
 
 [node name="Label4" type="Label" parent="."]
-margin_left = 430.0
-margin_top = 414.0
-margin_right = 496.0
-margin_bottom = 435.0
+margin_left = 371.0
+margin_top = 425.0
+margin_right = 437.0
+margin_bottom = 446.0
 
 [node name="Label2" type="Label" parent="."]
 margin_left = 576.0

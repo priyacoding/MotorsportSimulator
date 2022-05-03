@@ -64,7 +64,7 @@ var d = [{
 	"race": 90,
 	"points": 0
 }, {
-	"name": 'Valterri Bottas',
+	"name": 'Valtteri Bottas',
 	"team": 4,
 	"aware": 95,
 	"race": 85,
@@ -236,7 +236,9 @@ func exportdat():
 		"other": {
 			"res": sim.res,
 			"ssn": sim.ssn,
-			"rnd": sim.rnd
+			"rnd": sim.rnd,
+			"pts": sim.pts,
+			"fl": sim.flpoint
 		}
 	}
 	var json = JSON.print(obj, "\t")
@@ -255,6 +257,8 @@ func importdat():
 	sim.res = ot["res"]
 	sim.ssn = ot["ssn"]
 	sim.rnd = ot["rnd"]
+	sim.pts = ot["pts"]
+	sim.flpoint = ot["fl"]
 	get_tree().change_scene("res://Scenes/Main.tscn")
 	return true
 	
@@ -262,12 +266,17 @@ func import(i):
 	var o = JSON.parse(i).get_result()
 	if o == null:
 		return null
-	d = JSON.parse(o["drivers"]).get_result()
-	t = JSON.parse(o["const"]).get_result()
+	
+	d = o["drivers"]
+	t = o["const"]
+	wdc = o["wdc"]
+	wcc = o["wcc"]
 	var ot = o["other"]
 	sim.res = ot["res"]
 	sim.ssn = ot["ssn"]
 	sim.rnd = ot["rnd"]
+	sim.pts = ot["pts"]
+	sim.flpoint = ot["fl"]
 	get_tree().change_scene("res://Scenes/Main.tscn")
 	return true
 

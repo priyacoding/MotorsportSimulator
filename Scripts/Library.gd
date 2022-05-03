@@ -8,7 +8,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	sim.offrepo = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -17,21 +17,24 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://Scenes/Main.tscn")
+	sim.modid = 0
+	get_tree().change_scene("res://Scenes/modloader.tscn")
 
 
 func _on_Button2_pressed():
-	var e = drivers.importdat()
-	if e == null:
-		$Label2.visible = true
+	sim.modid = 1
+	get_tree().change_scene("res://Scenes/modloader.tscn")
+
 
 func _on_Button3_pressed():
-	get_tree().change_scene("res://Scenes/Library.tscn")
+	sim.modid = 2
+	get_tree().change_scene("res://Scenes/modloader.tscn")
 
 
 func _on_Button4_pressed():
-	get_tree().change_scene("res://Scenes/modtutorial.tscn")
+	get_tree().change_scene("res://Scenes/mainmenu.tscn")
 
 
 func _on_Button5_pressed():
-	get_tree().change_scene("res://Scenes/tutorial.tscn")
+	sim.modid = 3
+	get_tree().change_scene("res://Scenes/modloader.tscn")
