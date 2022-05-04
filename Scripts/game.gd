@@ -49,7 +49,7 @@ func _ready():
 				label2.text = result[i][0]
 				$a/prevres/Names.add_child(label2)
 				var label3 = Label.new()
-				if i<10:
+				if i<len(sim.pts):
 					if len(result[i]) ==4 and sim.flpoint[0]:
 						label3.text = "+" + str(sim.pts[i]+sim.flpoint[1]) + " (FL)"
 					else:

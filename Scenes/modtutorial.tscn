@@ -13,25 +13,41 @@ margin_bottom = 615.0
 color = Color( 0.227451, 0.282353, 0.4, 1 )
 
 [node name="Button5" type="Button" parent="."]
-margin_left = 223.0
-margin_top = 522.0
-margin_right = 814.0
-margin_bottom = 577.0
+margin_left = 377.0
+margin_top = 527.0
+margin_right = 968.0
+margin_bottom = 582.0
 rect_pivot_offset = Vector2( 206, 34 )
 text = "Main Menu"
+
+[node name="Button6" type="Button" parent="."]
+margin_left = 72.0
+margin_top = 528.0
+margin_right = 348.0
+margin_bottom = 583.0
+rect_pivot_offset = Vector2( 206, 34 )
+text = "Repository Tutorial"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 707.0
+margin_top = 130.0
+margin_right = 986.0
+margin_bottom = 171.0
+text = "Copy Mod Template to Clipboard"
 
 [node name="Label" type="Label" parent="."]
 margin_left = 60.0
 margin_top = 53.0
 margin_right = 963.0
 margin_bottom = 492.0
+rect_scale = Vector2( 0.997969, 0.998481 )
 text = "So you are here to mod the Motorsport Simulator game, or maybe you just want to see how it works. Well either way this guide is for you:
 
 **note: modding recquires some basic knowledge of the json structure and is not recommended without this knowledge!**
 
-1. To start modding the game you have to enter the game and then without doing anything, click export. Now the base string is copied to 
-your clipboard and you can mod it. Copy the json into a text editor prefarably a development IDE like Visual Studio Code with syntactic
-highlighting for JSON.
+
+1.  Use the button on the right to copy the base save JSON string
+
 
 2. DRIVERS: To mod the drivers in the game you will be editing the array called \"d.\" Each driver has 2 main properties; racecraft and
 awareness. Their racecraft controls their raw pace and ability to go fast typically restricted from 0 to 100 but you can experiment. Awareness
@@ -49,7 +65,9 @@ array you can find under the \"other\" dictionary; the first value will be point
 you can just edit the \"fl\" array; the first value, the boolean, just defines whether a point is given or not and the second value is how many
 points are given!
 
-Have fun modding and make sure to send you mods to itsabby#7677 on discord and I might add them into the game, there will also be a 
-pastebin mod repository system soon so you can upload your mods for anyone to use easier"
+Have fun modding and make sure to send you mods to itsabby#7677 on discord and I might add them into the game. You can also now make your own repository of mods on pastebin which is usable in the mod library "
+autowrap = true
 
 [connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

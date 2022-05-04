@@ -234,7 +234,7 @@ var offrepo = ["""{
 		{
 			"name": "Sebastian Vettel",
 			"team": 0,
-			"aware": 85,
+			"aware": 90,
 			"race": 95,
 			"points": 0
 		},
@@ -249,14 +249,14 @@ var offrepo = ["""{
 			"name": "Jenson Button",
 			"team": 1,
 			"aware": 85,
-			"race": 95,
+			"race": 90,
 			"points": 0
 		},
 		{
 			"name": "Lewis Hamilton",
 			"team": 1,
 			"aware": 85,
-			"race": 85,
+			"race": 90,
 			"points": 0
 		},
 		{
@@ -270,20 +270,20 @@ var offrepo = ["""{
 			"name": "Felipe Massa",
 			"team": 2,
 			"aware": 85,
-			"race": 90,
+			"race": 85,
 			"points": 0
 		},
 		{
 			"name": "Michael Schumacher",
 			"team": 3,
 			"aware": 85,
-			"race": 95,
+			"race": 80,
 			"points": 0
 		},
 		{
 			"name": "Nico Rosberg",
 			"team": 3,
-			"aware": 75,
+			"aware": 85,
 			"race": 90,
 			"points": 0
 		},
@@ -291,13 +291,13 @@ var offrepo = ["""{
 			"name": "Kimi Raikonnen",
 			"team": 4,
 			"aware": 95,
-			"race": 85,
+			"race": 90,
 			"points": 0
 		},
 		{
 			"name": "Romain Grosjean",
 			"team": 4,
-			"aware": 65,
+			"aware": 70,
 			"race": 80,
 			"points": 0
 		},
@@ -305,98 +305,98 @@ var offrepo = ["""{
 			"name": "Paul di Resta",
 			"team": 5,
 			"aware": 80,
-			"race": 95,
+			"race": 75,
 			"points": 0
 		},
 		{
-			"name": "Nico Hülkenburg",
+			"name": "Nico Hulkenberg",
 			"team": 5,
 			"aware": 80,
-			"race": 85,
+			"race": 80,
 			"points": 0
 		},
 		{
 			"name": "Kamui Kobayashi",
 			"team": 6,
 			"aware": 85,
-			"race": 90,
+			"race": 80,
 			"points": 0
 		},
 		{
 			"name": "Sergio Perez",
 			"team": 6,
 			"aware": 80,
-			"race": 85,
+			"race": 80,
 			"points": 0
 		},
 		{
 			"name": "Daniel Ricciardo",
 			"team": 7,
-			"aware": 90,
-			"race": 90,
+			"aware": 85,
+			"race": 75,
 			"points": 0
 		},
 		{
 			"name": "Jean-Eric Vergne",
 			"team": 7,
-			"aware": 75,
-			"race": 90,
+			"aware": 80,
+			"race": 75,
 			"points": 0
 		},
 		{
 			"name": "Pastor Maldonado",
 			"team": 8,
-			"aware": 85,
-			"race": 85,
+			"aware": 60,
+			"race": 75,
 			"points": 0
 		},
 		{
 			"name": "Bruno Senna",
 			"team": 8,
 			"aware": 80,
-			"race": 85,
+			"race": 75,
 			"points": 0
 		},
 		{
 			"name": "Heikki Kovaleinen",
 			"team": 9,
-			"aware": 90,
-			"race": 90,
+			"aware": 80,
+			"race": 70,
 			"points": 0
 		},
 		{
 			"name": "Vitaly Petrov",
 			"team": 9,
-			"aware": 60,
-			"race": 60,
+			"aware": 80,
+			"race": 75,
 			"points": 0
 		},
 		{
 			"name": "Pedro de la Rosa",
 			"team": 10,
-			"aware": 90,
-			"race": 90,
+			"aware": 80,
+			"race": 70,
 			"points": 0
 		},
 		{
 			"name": "Narain Karthikeyan",
 			"team": 10,
-			"aware": 60,
-			"race": 60,
+			"aware": 70,
+			"race": 65,
 			"points": 0
 		},
 		{
 			"name": "Timo Glock",
 			"team": 11,
-			"aware": 90,
-			"race": 90,
+			"aware": 80,
+			"race": 70,
 			"points": 0
 		},
 		{
 			"name": "Charles Pic",
 			"team": 11,
-			"aware": 60,
-			"race": 60,
+			"aware": 75,
+			"race": 70,
 			"points": 0
 		}
 	],
@@ -409,7 +409,7 @@ var offrepo = ["""{
 		{
 			"name": "McLaren Mercedes",
 			"speed": 95,
-			"rel": 75
+			"rel": 60
 		},
 		{
 			"name": "Ferrari",
@@ -428,7 +428,7 @@ var offrepo = ["""{
 		},
 		{
 			"name": "Force India",
-			"speed": 80,
+			"speed": 75,
 			"rel": 85
 		},
 		{
@@ -438,18 +438,18 @@ var offrepo = ["""{
 		},
 		{
 			"name": "Toro Rosso",
-			"speed": 80,
+			"speed": 75,
 			"rel": 70
 		},
 		{
 			"name": "Williams",
-			"speed": 65,
-			"rel": 65
+			"speed": 75,
+			"rel": 75
 		},
 		{
 			"name": "Caterham",
 			"speed": 70,
-			"rel": 60
+			"rel": 75
 		},
 		{
 			"name": "HRT",
@@ -459,7 +459,7 @@ var offrepo = ["""{
 		{
 			"name": "Marussia",
 			"speed": 70,
-			"rel": 60
+			"rel": 70
 		}
 	],
 	"wdc": [
@@ -977,8 +977,15 @@ var offrepo = ["""{
 }"""]
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
+	var repo = {
+		"name":"Official Repository",
+		"author": "abby",
+		"names": names, 
+		"descriptions": descs,
+		"mods": offrepo
+	}
+	OS.set_clipboard(JSON.print(repo, "\t"))
 	if sim.offrepo:
 		$Label2.text = names[sim.modid]
 		$desc.text = descs[sim.modid]

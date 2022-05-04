@@ -13,32 +13,32 @@ margin_bottom = 615.0
 color = Color( 0.227451, 0.282353, 0.4, 1 )
 
 [node name="Button" type="Button" parent="."]
-margin_left = 113.0
-margin_top = 109.0
-margin_right = 254.0
-margin_bottom = 172.0
+margin_left = 77.0
+margin_top = 110.0
+margin_right = 218.0
+margin_bottom = 173.0
 text = "F1 2021"
 
 [node name="Button2" type="Button" parent="."]
-margin_left = 284.0
+margin_left = 259.0
 margin_top = 108.0
-margin_right = 419.0
+margin_right = 394.0
 margin_bottom = 172.0
 rect_pivot_offset = Vector2( 42, 31 )
 text = "F1 2012"
 
 [node name="Button3" type="Button" parent="."]
-margin_left = 456.0
+margin_left = 433.0
 margin_top = 108.0
-margin_right = 591.0
+margin_right = 582.0
 margin_bottom = 172.0
 rect_pivot_offset = Vector2( 42, 31 )
 text = "F1 2008 (Unavailable)"
 
 [node name="Button5" type="Button" parent="."]
-margin_left = 619.0
+margin_left = 611.0
 margin_top = 109.0
-margin_right = 754.0
+margin_right = 746.0
 margin_bottom = 173.0
 rect_pivot_offset = Vector2( 42, 31 )
 text = "F2 2022"
@@ -66,12 +66,28 @@ margin_bottom = 568.0
 text = "Open Pastebin Repository (Upcoming)"
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 415.0
-margin_top = 56.0
-margin_right = 625.0
-margin_bottom = 82.0
+margin_left = 291.0
+margin_top = 54.0
+margin_right = 501.0
+margin_bottom = 80.0
 text = "The Library of Saves"
 align = 1
+
+[node name="Button7" type="Button" parent="."]
+margin_left = 787.0
+margin_top = 219.0
+margin_right = 1002.0
+margin_bottom = 274.0
+rect_pivot_offset = Vector2( 206, 34 )
+text = "Repository Tutorial"
+
+[node name="Button8" type="Button" parent="."]
+margin_left = 786.0
+margin_top = 295.0
+margin_right = 1001.0
+margin_bottom = 350.0
+rect_pivot_offset = Vector2( 206, 34 )
+text = "Modmaking Tutorial"
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

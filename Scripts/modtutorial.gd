@@ -18,3 +18,8 @@ func _ready():
 
 func _on_Button5_pressed():
 	get_tree().change_scene("res://Scenes/mainmenu.tscn")
+
+
+func _on_Button_pressed():
+	drivers.reset()
+	OS.set_clipboard(drivers.exportdat())
